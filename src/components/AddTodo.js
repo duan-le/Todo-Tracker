@@ -8,7 +8,7 @@ const AddTodo = ({ onAdd }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (!text) {
-      alert("Please add a to do item.");
+      alert("Please add a to-do item.");
       return;
     }
     onAdd({ text, date, reminder });
@@ -20,25 +20,25 @@ const AddTodo = ({ onAdd }) => {
   return (
     <form className="add-form" onSubmit={onSubmit}>
       <div className="form-control">
-        <label>To Do</label>
+        <label>To-do:</label>
         <input
           type="text"
-          placeholder="Add To Do"
+          placeholder="Required"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
       </div>
       <div className="form-control">
-        <label>Date</label>
+        <label>Date:</label>
         <input
           type="text"
-          placeholder="Add Date"
+          placeholder="Not Required"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
       </div>
       <div className="form-control form-control-check">
-        <label>Reminder</label>
+        <label>Highlight:</label>
         <input
           type="checkbox"
           checked={reminder}
