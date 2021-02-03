@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To Use
 
-In the project directory, you can:
+In the project directory, you can:\
 Install dependencies
 ```
 npm install
